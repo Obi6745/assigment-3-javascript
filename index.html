@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="weather-card">
+                <div class="current-weather">
+                    <h2 id="cityName">Enter a city name</h2>
+                    <div class="weather-info">
+                        <div class="temperature">
+                            <span id="temperature">--</span>°C
+                        </div>
+                        <div class="weather-description" id="description">--</div>
+                        <div class="weather-details">
+                            <div>Humidity: <span id="humidity">--</span>%</div>
+                            <div>Wind: <span id="wind">--</span> km/h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast-container">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast" class="forecast-grid"></div>
+            </div>
+        </main>
+
+        <div class="documentation-references">
+            <h3>Documentation References</h3>
+            <ul>
+                <li>
+                    <a href="https://openweathermap.org/current" target="_blank">Current Weather Data API Documentation</a>
+                    - Used for implementing current weather functionality
+                </li>
+                <li>
+                    <a href="https://openweathermap.org/forecast5" target="_blank">5 Day Weather Forecast Documentation</a>
+                    - Used for implementing the 5-day forecast feature
+                </li>
+                <li> 
+                    <a href="https://openweathermap.org/appid" target="_blank">API Key Setup Guide</a>
+                    - Used for API authentication setup
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+        <footer>
+            <p>Data provided by <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
